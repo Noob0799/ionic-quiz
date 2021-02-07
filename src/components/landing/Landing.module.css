@@ -1,0 +1,46 @@
+.title {
+  text-align: center;
+  padding: 5vh 5vw;
+}
+
+.title h3 {
+  font-size: 8vw;
+  color: black;
+  font-weight: 600;
+}
+
+.title h3 span {
+  font-size: 12vw;
+  font-weight: 700;
+  background: rgb(255, 185, 32);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 185, 32, 1) 30%,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(77, 223, 46, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-stroke: 1px black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title p {
+  font-size: 4vw;
+  color: green;
+  padding: 2vh 3vw;
+}
+
+.content {
+  --background: rgb(255, 255, 255);
+  --background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(123, 241, 255, 1) 100%
+  );
+}
+
+.playbutton {
+  text-align: center;
+  margin-bottom: 5vh;
+}

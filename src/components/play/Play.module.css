@@ -1,0 +1,19 @@
+.content {
+    --background: rgb(255, 255, 255);
+    --background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 1) 10%,
+        rgba(123, 241, 255, 1) 90%
+    );
+}
+
+.container {
+    height: fit-content;
+    margin: 5vh 5vw;
+}
+
+.playbutton {
+    text-align: center;
+    margin-bottom: 10vh;
+}
+  
