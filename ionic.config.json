@@ -1,0 +1,7 @@
+{
+  "name": "ionic-quiz",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
