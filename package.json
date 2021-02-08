@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@capacitor/android": "^2.4.6",
     "@capacitor/core": "2.4.6",
     "@ionic/react": "^5.5.0",
     "@ionic/react-router": "^5.5.0",
@@ -40,7 +41,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "ionic build && ionic cap add android",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
