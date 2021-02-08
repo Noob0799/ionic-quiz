@@ -3,62 +3,52 @@
         {
             "id": 1,
             "name": "Taj Mahal",
-            "location": "Agra,UP,India",
-            "url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFile%3ATaj-Mahal.jpg&psig=AOvVaw2U_WzhVIv7CU89WXu4KnW0&ust=1612819503821000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOi-zofb2O4CFQAAAAAdAAAAABAD"
+            "location": "Agra,UP,India"
         },
         {
             "id": 2,
             "name": "Qutub Minar",
-            "location": "New Delhi,India",
-            "url": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.delhicapital.com%2Fwp-content%2Fuploads%2F2019%2F07%2Fqutub-minar-1024x612.jpg&imgrefurl=https%3A%2F%2Fwww.delhicapital.com%2Fmonuments-in-delhi%2Fqutub-minar.html&tbnid=Obdhj3aXSvRlWM&vet=12ahUKEwjdtNiX29juAhVHWCsKHby1BpsQMygEegUIARDcAQ..i&docid=qDuJhmO33OKf6M&w=1024&h=612&q=qutub%20minar&ved=2ahUKEwjdtNiX29juAhVHWCsKHby1BpsQMygEegUIARDcAQ"
+            "location": "New Delhi,India"
         },
         {
             "id": 3,
             "name": "Sun Temple,Konark",
-            "location": "Puri,Orissa,India",
-            "url": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F4%2F47%2FKonarka_Temple.jpg&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKonark_Sun_Temple&tbnid=Usn5Z8BbkRn77M&vet=12ahUKEwiwkOff29juAhVchUsFHVcgAXkQMygAegUIARDOAQ..i&docid=RBCAKXAhsZwEhM&w=2048&h=1366&q=sun%20temple&ved=2ahUKEwiwkOff29juAhVchUsFHVcgAXkQMygAegUIARDOAQ"
+            "location": "Puri,Orissa,India"
         },
         {
             "id": 4,
             "name": "Fatehpur Sikri Fort",
-            "location": "Agra,UP,India",
-            "url": "https://www.google.com/search?q=fatehpur+sikri&sxsrf=ALeKk02QZepaasw-utVoXbm4n3S9KXKx-A:1612733390881&tbm=isch&source=iu&ictx=1&fir=HKERNrAEjycztM%252CfRG1DjkwHmzuQM%252C_&vet=1&usg=AI4_-kRFAblBybGE_5G_4k2nI4ynkX-MPA&sa=X&ved=2ahUKEwjqz4WH3NjuAhUpyDgGHW80Cf4Q9QF6BAgQEAE#imgrc=HKERNrAEjycztM"
+            "location": "Agra,UP,India"
         },
         {
             "id": 5,
             "name": "Ellora Caves",
-            "location": "Aurangabad,Maharashtra,India",
-            "url": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F8%2F87%2FKailasha_temple_at_ellora.JPG%2F1200px-Kailasha_temple_at_ellora.JPG&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FEllora_Caves&tbnid=qPuV80JluADGbM&vet=12ahUKEwjJs-O93NjuAhWOPysKHXH_BzMQMygCegUIARDVAQ..i&docid=vnaw-nloOypNzM&w=1200&h=900&q=ellora%20caves&ved=2ahUKEwjJs-O93NjuAhWOPysKHXH_BzMQMygCegUIARDVAQ"
+            "location": "Aurangabad,Maharashtra,India"
         },
         {
             "id": 6,
             "name": "Red Fort",
-            "location": "New Delhi,India",
-            "url": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.holidify.com%2Fimages%2Fcmsuploads%2Fcompressed%2FDelhi_Red_fort_20190312151147.jpg&imgrefurl=https%3A%2F%2Fwww.holidify.com%2Fplaces%2Fdelhi%2Fred-fort-sightseeing-1731.html&tbnid=N6irFnRrBtHvBM&vet=12ahUKEwiap-2M3djuAhUJoUsFHdwPDAQQMygBegUIARDUAQ..i&docid=FfPG1x2k-ak2KM&w=1200&h=900&q=red%20fort&ved=2ahUKEwiap-2M3djuAhUJoUsFHdwPDAQQMygBegUIARDUAQ"
+            "location": "New Delhi,India"
         },
         {
             "id": 7,
             "name": "Sanchi Stupa",
-            "location": "Sanchi,Madhya Pradesh,India",
-            "url": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.britannica.com%2F36%2F155836-050-89E7AA9E%2FGreat-Stupa-Sanchi-India.jpg&imgrefurl=https%3A%2F%2Fwww.britannica.com%2Fplace%2FGreat-Stupa-Buddhist-monument-Sanchi-India&tbnid=0sMddksTFxSSsM&vet=12ahUKEwi4jN2g3djuAhWXGisKHUMqBWEQMygBegUIARDTAQ..i&docid=PJkOKlkw-IiSCM&w=1600&h=969&q=sanchi%20stupa&ved=2ahUKEwi4jN2g3djuAhWXGisKHUMqBWEQMygBegUIARDTAQ"
+            "location": "Sanchi,Madhya Pradesh,India"
         },
         {
             "id": 8,
             "name": "Jantar Mantar",
-            "location": "New Delhi,India",
-            "url": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fb%2Fb8%2FJantar_Mantar%252C_New_Delhi_%2528Misra_Yantra%2529.jpg&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FJantar_Mantar%2C_New_Delhi&tbnid=N0YzRDnc7brRZM&vet=12ahUKEwj9g8zu3djuAhXXGHIKHd98AY0QMygAegUIARDQAQ..i&docid=TLIpRR1KEItpNM&w=4802&h=2602&q=jantar%20mantar&ved=2ahUKEwj9g8zu3djuAhXXGHIKHd98AY0QMygAegUIARDQAQ"
+            "location": "New Delhi,India"
         },
         {
             "id": 9,
             "name": "Mysore Palace",
-            "location": "Mysuru,Karnataka,India",
-            "url": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fcurlytales.com%2Fwp-content%2Fuploads%2F2019%2F01%2Fdepositphotos_116925416-stock-photo-mysore-palace-in-mysore-india.jpg&imgrefurl=https%3A%2F%2Fcurlytales.com%2Fmysore-palace%2F&tbnid=zYqueEp4cyNbqM&vet=12ahUKEwi6urvZ3tjuAhUNeH0KHZxkDa8QMygBegUIARDUAQ..i&docid=nxObetPaVeCDUM&w=1024&h=576&q=mysore%20palace&ved=2ahUKEwi6urvZ3tjuAhUNeH0KHZxkDa8QMygBegUIARDUAQ"
+            "location": "Mysuru,Karnataka,India"
         },
         {
             "id": 10,
             "name": "Golden Temple",
-            "location": "Amritsar, Punjab",
-            "url": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic.toiimg.com%2Fthumb%2F61820954.cms%3Fresizemode%3D75%26width%3D1200%26height%3D900&imgrefurl=https%3A%2F%2Ftimesofindia.indiatimes.com%2Ftravel%2Fdestinations%2Fgolden-temple-the-most-visited-place-in-the-world%2Fas61820921.cms&tbnid=BqW6TAshOw2NxM&vet=12ahUKEwiewPqJ39juAhUPnUsFHc9qB7AQMygBegUIARDSAQ..i&docid=F2oWcO9ti5tk7M&w=1200&h=898&q=golden%20temple&ved=2ahUKEwiewPqJ39juAhUPnUsFHc9qB7AQMygBegUIARDSAQ"
+            "location": "Amritsar, Punjab"
         }
     ]
 }

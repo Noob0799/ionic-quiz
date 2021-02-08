@@ -7,13 +7,33 @@
     );
 }
 
+.instructions {
+    text-align: center;
+    margin: 2vh 10vw;
+}
+
 .container {
     height: fit-content;
     margin: 5vh 5vw;
 }
 
+.container img {
+    width: 100%;
+    height: inherit;
+}
+
 .playbutton {
     text-align: center;
     margin-bottom: 10vh;
+}
+
+.alert {
+    --background: rgb(255, 185, 32)
+}
+
+.details {
+    background-color: white;
+    margin: 5vh 4vw;
+    border-radius: 10px;
 }
   
