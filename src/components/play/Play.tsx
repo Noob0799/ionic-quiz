@@ -22,6 +22,8 @@ import data from "./monuments.json";
 import images from "./images";
 import ReactCardFlip from "react-card-flip";
 import TinderCard from "react-tinder-card";
+import Alert from "./alert/Alert";
+import '../../theme/variables.css';
 interface MyState {
   showIntroAlert: boolean;
   showExitAlert: boolean;
@@ -51,7 +53,7 @@ class Play extends React.Component<{}, MyState> {
       ],
       monuments: [],
       displayData: [],
-      score: 0
+      score: 0,
     };
   }
 
@@ -59,16 +61,16 @@ class Play extends React.Component<{}, MyState> {
     this.setState({
       showIntroAlert: true,
       monuments: [...data.monuments],
-      displayData: [...data.monuments]
+      displayData: [...data.monuments],
     });
   }
 
   handleRestart = () => {
     this.setState({
-        displayData: [...this.state.monuments],
-        score: 0,
-        showIntroAlert: false,
-        showExitAlert: false,
+      displayData: [...this.state.monuments],
+      score: 0,
+      showIntroAlert: false,
+      showExitAlert: false,
     });
   };
 
@@ -95,7 +97,7 @@ class Play extends React.Component<{}, MyState> {
         false,
         false,
         false,
-      ]
+      ],
     });
   };
 
@@ -107,34 +109,34 @@ class Play extends React.Component<{}, MyState> {
     });
   };
 
-  onSwipe = (direction: string,id: number) => {
+  onSwipe = (direction: string, id: number) => {
     console.log("You swiped: " + direction);
     let displayData: Array<{ id: number; name: string; location: string }> = [];
-    if(direction === 'left' || direction === 'right') {
-        displayData = this.state.displayData.filter(obj => {
-            return obj.id !== id
-        });
+    if (direction === "left" || direction === "right") {
+      displayData = this.state.displayData.filter((obj) => {
+        return obj.id !== id;
+      });
     }
-    if(direction === 'right') {
-        this.setState({
-            score: this.state.score + 1,
-            displayData: [...displayData]
-        });
-    } else if(direction === 'left') {
-        this.setState({
-            displayData: [...displayData]
-        });
+    if (direction === "right") {
+      this.setState({
+        score: this.state.score + 1,
+        displayData: [...displayData],
+      });
+    } else if (direction === "left") {
+      this.setState({
+        displayData: [...displayData],
+      });
     }
   };
 
   onCardLeftScreen = (direction: string) => {
     console.log("You swiped: " + direction);
-    if(this.state.displayData.length === 0) {
-        this.setState({
-            showExitAlert: true,
-            displayData: [...this.state.monuments],
-            showIntroAlert: false,
-        });
+    if (this.state.displayData.length === 0) {
+      this.setState({
+        showExitAlert: true,
+        displayData: [...this.state.monuments],
+        showIntroAlert: false,
+      });
     }
   };
 
@@ -149,26 +151,23 @@ class Play extends React.Component<{}, MyState> {
           </IonToolbar>
         </IonHeader>
         <IonContent className={styles.content}>
-          <IonAlert
+          <Alert
             isOpen={this.state.showIntroAlert}
             onDidDismiss={() => this.setShowIntroAlert(false)}
-            cssClass={styles.alert}
+            cssClass='alert'
             header={"Instructions"}
             message={
               "Guess the locations of the monuments and tap on the cards to see if you got them correct. Swipe left if you got them wrong and right if you were spot on!"
             }
             buttons={["OK"]}
           />
-          <IonAlert
+          <Alert
             isOpen={this.state.showExitAlert}
             onDidDismiss={() => this.setShowExitAlert(false)}
-            cssClass={styles.alert}
-            header={"Score"}
-            message={
-                `${this.state.score}/10`
-            }
+            cssClass='alert'
+            header={`Score: ${this.state.score}/10`}
             buttons={["OK"]}
-            />
+          />
           <div className={styles.container}>
             {this.state.monuments && this.state.monuments.length > 0 ? (
               this.state.displayData.map((obj) => {
@@ -181,8 +180,9 @@ class Play extends React.Component<{}, MyState> {
                       <div
                         key="front"
                         hidden={this.state.isFlipped[obj.id - 1]}
+                        onClick={() => this.handleFlip(obj.id - 1)}
                       >
-                        <IonCard onClick={() => this.handleFlip(obj.id - 1)}>
+                        <IonCard>
                           <img src={images["image" + obj.id]} alt={obj.name} />
                         </IonCard>
                       </div>
@@ -191,21 +191,23 @@ class Play extends React.Component<{}, MyState> {
                         hidden={!this.state.isFlipped[obj.id - 1]}
                       >
                         <TinderCard
-                          onSwipe={(direction) => this.onSwipe(direction,obj.id)}
+                          onSwipe={(direction) =>
+                            this.onSwipe(direction, obj.id)
+                          }
                           onCardLeftScreen={this.onCardLeftScreen}
                           preventSwipe={["up", "down"]}
                         >
-                            <div className={styles.details}>
-                                <IonCardHeader
-                                onClick={() => this.handleFlip(obj.id - 1)}
-                                >
-                                <IonCardSubtitle>Name</IonCardSubtitle>
-                                <IonCardTitle>{obj.name}</IonCardTitle>
-                                <br />
-                                <IonCardSubtitle>Destination</IonCardSubtitle>
-                                <IonCardTitle>{obj.location}</IonCardTitle>
-                                </IonCardHeader>
-                            </div>
+                          <div className={styles.details}>
+                            <IonCardHeader
+                              onClick={() => this.handleFlip(obj.id - 1)}
+                            >
+                              <IonCardSubtitle>Name</IonCardSubtitle>
+                              <IonCardTitle className="title">{obj.name}</IonCardTitle>
+                              <br />
+                              <IonCardSubtitle>Destination</IonCardSubtitle>
+                              <IonCardTitle className="title">{obj.location}</IonCardTitle>
+                            </IonCardHeader>
+                          </div>
                         </TinderCard>
                       </div>
                     </ReactCardFlip>
@@ -213,7 +215,7 @@ class Play extends React.Component<{}, MyState> {
                 );
               })
             ) : (
-                <h3>Game cannot be played right now!</h3>
+              <h3>Game cannot be played right now!</h3>
             )}
           </div>
           <div className={styles.playbutton}>

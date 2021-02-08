@@ -236,3 +236,8 @@ http://ionicframework.com/docs/theming/ */
     --ion-card-background: #1e1e1e;
   }
 }
+
+.title {
+  --color: black;
+  font-weight: 400;
+}
